@@ -56,6 +56,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: argocd
   name: emailservice
 spec:
   type: ClusterIP
@@ -69,6 +70,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: argocd
   name: checkoutservice
 spec:
   selector:
@@ -117,6 +119,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: argocd
   name: checkoutservice
 spec:
   type: ClusterIP
@@ -130,6 +133,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: argocd
   name: recommendationservice
 spec:
   selector:
@@ -173,6 +177,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: argocd
   name: recommendationservice
 spec:
   type: ClusterIP
@@ -186,6 +191,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: argocd
   name: frontend
 spec:
   selector:
@@ -258,6 +264,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: argocd
   name: frontend
 spec:
   type: NodePort
@@ -271,6 +278,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: argocd
   name: frontend-external
 spec:
   type: LoadBalancer
@@ -284,6 +292,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: argocd
   name: paymentservice
 spec:
   selector:
@@ -323,6 +332,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: argocd
   name: paymentservice
 spec:
   type: ClusterIP
@@ -336,6 +346,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: argocd
   name: productcatalogservice
 spec:
   selector:
@@ -375,6 +386,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: argocd
   name: productcatalogservice
 spec:
   type: ClusterIP
@@ -388,6 +400,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: argocd
   name: cartservice
 spec:
   selector:
@@ -428,6 +441,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: argocd
   name: cartservice
 spec:
   type: ClusterIP
@@ -441,6 +455,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: argocd
   name: loadgenerator
 spec:
   selector:
@@ -483,6 +498,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: argocd
   name: currencyservice
 spec:
   selector:
@@ -523,6 +539,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: argocd
   name: currencyservice
 spec:
   type: ClusterIP
@@ -536,6 +553,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: argocd
   name: shippingservice
 spec:
   selector:
@@ -575,6 +593,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: argocd
   name: shippingservice
 spec:
   type: ClusterIP
@@ -588,6 +607,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: argocd
   name: redis-cart
 spec:
   selector:
@@ -628,6 +648,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: argocd
   name: redis-cart
 spec:
   type: ClusterIP
@@ -641,6 +662,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: argocd
   name: adservice
 spec:
   selector:
@@ -682,6 +704,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: argocd
   name: adservice
 spec:
   type: ClusterIP
